@@ -1,16 +1,16 @@
 <script>
 	import {Col, Container, Row, Button} from 'sveltestrap';
+	import Header from './Header.svelte';
 </script>
 <style>
 
 </style>
 <nav>
 <Container>
-	<Row>
-		<Button color='secondary'  href=".">Home</Button>
-		<Button color='secondary'  href="about">Home</Button>
+	
+		<Header></Header>
 
-	</Row>
+	
 </Container>
 </nav>
 
