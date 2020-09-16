@@ -1,4 +1,22 @@
 <script>
+	import {Col, Container, Row, Button} from 'sveltestrap';
+</script>
+<style>
+
+</style>
+<nav>
+<Container>
+	<Row>
+		<Button color='secondary'  href=".">Home</Button>
+		<Button color='secondary'  href="about">Home</Button>
+
+	</Row>
+</Container>
+</nav>
+
+<!-- 
+
+<script>
 	import Button from './Button.svelte';
 	export let segment;
 
@@ -56,7 +74,7 @@
 		<li><a aria-current="{segment === 'about' ? 'page' : undefined}" href="about">ORDER</a></li>
 		<Button></Button>
 		<!-- for the blog link, we're using rel=prefetch so that Sapper prefetches
-		     the blog data when we hover over the link or tap it on a touchscreen -->
+		     the blog data when we hover over the link or tap it on a touchscreen 
 		<li><a rel=prefetch aria-current="{segment === 'blog' ? 'page' : undefined}" href="blog">CHECKOUT</a></li>
 	</ul>
-</nav>
+</nav> -->
