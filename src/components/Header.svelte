@@ -209,7 +209,7 @@
   <h2 class="mt2 mb0 f6 fw4 ttu tracked">Authentic Vietnamese Cuisine</h2>
   <nav class="bt bb tc mw7 center mt4">
     <a class="f6 f5-l link bg-animate black-80 hover-bg-lightest-blue dib pa3 ph4-l" href="/">Home</a>
-    <a class="f6 f5-l link bg-animate black-80 hover-bg-light-green dib pa3 ph4-l" href="/portfolio">Menu</a>
+    <a class="f6 f5-l link bg-animate black-80 hover-bg-light-green dib pa3 ph4-l" href="/menu">Menu</a>
     <a class="f6 f5-l link bg-animate black-80 hover-bg-light-blue dib pa3 ph4-l" href="/shop">Checkout</a>
     <a class="f6 f5-l link bg-animate black-80 hover-bg-light-pink dib pa3 ph4-l" href="/about">About</a>
   </nav>
