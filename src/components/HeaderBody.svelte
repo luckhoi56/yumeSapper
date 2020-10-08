@@ -1,3 +1,7 @@
+<script>
+    export let m_category = 'pho tai nam';
+    
+</script>
 <style>
 .dib {
     display: inline-block;
@@ -74,15 +78,15 @@
     }
 }
 </style>
-<nav class="pa3 pa4-ns">
-  <a class="link dim black b f6 f5-ns dib mr3" href="#" title="Pho">Pho</a>
-  <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="Rice">Rice</a>
+
+  <a class="buttonnav link dim gray b f6 f5-ns dib mr3" href="#" title="{m_category}">{m_category}</a>
+  <!-- <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="Rice">Rice</a>
   <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="Vermecelli">Vermecelli</a>
   <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="Store">Banhmi</a>
   <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="Home">Rolls</a>
   <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="About">Smoothie</a>
   <a class="link dim gray    f6 f5-ns dib mr3" href="#" title="Store">Tea</a>
-  <a class="link dim gray    f6 f5-ns dib" href="#" title="Contact">Coffee</a>
-</nav>
+  <a class="link dim gray    f6 f5-ns dib" href="#" title="Contact">Coffee</a> -->
+
 
 
