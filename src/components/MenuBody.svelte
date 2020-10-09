@@ -1,7 +1,7 @@
 <script>
     import MenuItem from './MenuItem.svelte';
     import { onMount } from "svelte";
-    const apiURL = "http://localhost:4242/menu";
+    const apiURL = "http://localhost:4242/menuItem";
     let data = [];
     const promise = fetch(apiURL).then(response => response.json());
     

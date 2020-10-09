@@ -35,6 +35,8 @@
 		color: white;
 	}
 </style>
+
+
 <nav class="pa3 pa4-ns">
 {#await fetchCategory()}
     <p>...waiting</p>
@@ -49,3 +51,4 @@
 
 
 <MenuBody></MenuBody>
+
