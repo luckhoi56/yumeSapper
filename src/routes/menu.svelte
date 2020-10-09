@@ -1,11 +1,17 @@
 <script>
     import HeaderBody from '../components/HeaderBody.svelte';
     import MenuBody from '../components/MenuBody.svelte';
-    const fetchCategory = (async()=>{
-        const response = await fetch('http://localhost:4242/menuCategory');
-        return await response.json();
-    })();
+    async function fetchCategory(){
+        const res = await fetch('http://localhost:4242/menuCategory');
+         const data = await res.json();
 
+    if (res.ok) {
+      return data;
+    } else {
+      throw new Error(data);
+    }
+  }
+  
     
     
 
@@ -30,7 +36,7 @@
 	}
 </style>
 <nav class="pa3 pa4-ns">
-{#await fetchCategory}
+{#await fetchCategory()}
     <p>...waiting</p>
     {:then data}
     {#each data.data as item}
