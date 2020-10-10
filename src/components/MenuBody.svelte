@@ -1,9 +1,19 @@
 <script>
     import MenuItem from './MenuItem.svelte';
-    import { onMount } from "svelte";
-    const apiURL = "http://localhost:4242/menuItem";
-    let data = [];
-    const promise = fetch(apiURL).then(response => response.json());
+    export let m_category ='Soup';
+    let m_items ={"Category": `${m_category}`};
+    let promise = getItems();
+    async function getItems(){
+        const res = await fetch('http://localhost:4242/test1',{
+            method:'POST',
+            headers:{
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({ Category: 'Soup'})
+        });
+        const json = await res.json();
+        console.log(json)
+    }
     
 </script>
 {#await promise then data}
