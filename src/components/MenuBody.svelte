@@ -1,6 +1,6 @@
 <script>
     import MenuItem from './MenuItem.svelte';
-    export let m_category ='Soup';
+    export let m_category ='';
     
     let promise = getItems(m_category);
     async function getItems(m_category){
@@ -14,6 +14,7 @@
         });
         const json = await res.json();
         console.log(json)
+        return json;
     }
     
 </script>
