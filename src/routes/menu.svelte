@@ -50,5 +50,5 @@
 </nav>
 
 
-<MenuBody ></MenuBody>
+<MenuBody m_category='Smoothie'></MenuBody>
 

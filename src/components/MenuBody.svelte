@@ -1,15 +1,16 @@
 <script>
     import MenuItem from './MenuItem.svelte';
     export let m_category ='Soup';
-    let m_items ={"Category": `${m_category}`};
-    let promise = getItems();
-    async function getItems(){
+    
+    let promise = getItems(m_category);
+    async function getItems(m_category){
         const res = await fetch('http://localhost:4242/test1',{
             method:'POST',
             headers:{
                 'Content-Type': 'application/json',
             },
-            body: JSON.stringify({ Category: 'Soup'})
+            //body: JSON.stringify({ Category: 'Smoothie'})
+            body: JSON.stringify({ Category: `${m_category}`})
         });
         const json = await res.json();
         console.log(json)
