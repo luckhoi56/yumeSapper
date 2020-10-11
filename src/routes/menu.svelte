@@ -43,6 +43,7 @@
     {:then data}
     {#each data.data as item}
         <HeaderBody m_category={item.Category} ></HeaderBody>
+        <MenuBody m_category={item.Category}></MenuBody>
     {/each}
     {:catch error}
         <p>An error happened</p>
@@ -50,5 +51,5 @@
 </nav>
 
 
-<MenuBody m_category='Smoothie'></MenuBody>
+
 

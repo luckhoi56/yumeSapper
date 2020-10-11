@@ -18,11 +18,52 @@
     }
     
 </script>
+<style>
+.cf:before, .cf:after {
+    content: " ";
+    display: table;
+}
+
+.cf:after {
+    clear: both;
+}
+
+.cf {
+    *zoom: 1;
+}
+
+.fl {
+    float: left;
+    _display: inline;
+}
+
+.w-50 {
+    width: 50%;
+}
+
+.bg-light-gray {
+    background-color: #eee;
+}
+
+.bg-near-white {
+    background-color: #f4f4f4;
+}
+
+.tc {
+    text-align: center;
+}
+</style>
+
 {#await promise then data}
+<div class="cf">
 {#each data.data as item}
+<div class="fl w-50 bg-near-white tc">
 <MenuItem m_url={item.Image} m_price={item.Price} m_title={item.ItemName}>
 
 </MenuItem>
+</div>
+
 {/each}
+</div>
 {/await}
 
