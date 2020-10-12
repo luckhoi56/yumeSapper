@@ -1,7 +1,13 @@
 <script>
+import Popup from './modal_essential/Popup.svelte'
+import { getContext } from 'svelte';
 export let m_url='https://drive.google.com/drive/folders/1EzjOdXQXFbzJ8QiJj5Mo1MNn7p9UwPbs?usp=sharing';
 export let m_title='Pho bo';
 export let m_price='6.75';
+const { open } = getContext('simple-modal');
+const showPopup = () => {
+		open(Popup, { message: "It's a popup!" });
+	};
 </script>
 
 
@@ -127,7 +133,7 @@ export let m_price='6.75';
 }
 </style>
 
-<article class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center">
+<article on:click={showPopup} class="br2 ba dark-gray b--black-10 mv4 w-100 w-50-m w-25-l mw5 center">
   <img src={m_url} class="db w-100 br2 br--top" alt="hello yume">
   <div class="pa2 ph3-ns pb3-ns">
     <div class="dt w-100 mt1">

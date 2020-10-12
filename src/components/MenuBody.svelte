@@ -1,5 +1,6 @@
 <script>
     import MenuItem from './MenuItem.svelte';
+    import Modal from './modal_essential/Modal.svelte';
     export let m_category ='';
     
     let promise = getItems(m_category);
@@ -58,9 +59,12 @@
 <div class="cf">
 {#each data.data as item}
 <div class="fl w-50 bg-near-white tc">
-<MenuItem m_url={item.Image} m_price={item.Price} m_title={item.ItemName}>
+<Modal>
+    <MenuItem m_url={item.Image} m_price={item.Price} m_title={item.ItemName}>
 
-</MenuItem>
+    </MenuItem>
+</Modal>
+
 </div>
 
 {/each}
